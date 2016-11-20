@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<htm>
+
+    <head>
+        <meta charset='utf-8' /> </head>
+<!--研究一个浮动元素和一个非浮动元素之间的相互影响-->
+    <body>
+   
+        <div style="border:1px solid red;width:100px;height:100px;float:left;"></div>
+         <div style="border:1px solid red;width:100px;height:100px;float:left;"></div>
+      
+        <div style="border:1px solid blue;width:100px;height:100px;margin:10px 15px;"></div>
+        <div>
+       <div style="border:1px solid red;width:100px;height:100px;float:left;"></div>
+            <div style='clear:both;'></div>
+         <div style="border:1px solid red;width:100px;height:100px;float:left;"></div>
+       <div style='clear:both;'></div>
+        <div style="border:1px solid blue;width:100px;height:100px;margin:10px 15px;"></div></div>
+    </body>
+</htm>

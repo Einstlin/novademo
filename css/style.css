@@ -1,0 +1,247 @@
+    body,
+    a,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    hr,
+    p,
+    blockquote,
+    dl,
+    dt,
+    dd,
+    ul,
+    ol,
+    li,
+    pre,
+    form,
+    fieldset,
+    legend,
+    button,
+    input,
+    textarea,
+    th,
+    td {
+        margin: 0;
+        padding: 0;
+    }
+    
+    li {
+        list-style-type: none;
+    }
+    
+    .clear {
+        clear: both;
+    }
+    
+    .head_bg {
+        background: url(../images/page_body.jpg) top repeat-x;
+    }
+    
+    .wrapper {
+        width: 74%;
+        margin: 0 auto;
+    }
+    
+    .wrapper1 {
+        width: 75%;
+        margin: 0 auto;
+    }
+    
+    img.logo {
+        padding: 20px 0 10px 0;
+    }
+    
+    ul.nav>li {
+        display: inline-block;
+        text-align: center;
+    }
+    
+    ul.nav>li>a {
+        display: inline-block;
+        padding: 12px 0 23px 0;
+        width: 95px;
+    }
+    
+    nav a:hover {
+        background-image: url(../images/page_menu_hover.png);
+    }
+    
+    a {
+        text-decoration: none;
+        color: dimgray;
+    }
+    
+    h3 {
+        color: darkorange;
+    }
+    
+    article>h3 {
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+    
+    article>p {
+        font-size: 12px;
+        line-height: 1.5em;
+        letter-spacing: 1px;
+    }
+    
+    a.btu {
+        display: block;
+        float: right;
+        background-image: url(../images/readmore.png);
+        width: 138px;
+        height: 33px;
+    }
+    
+    .offset1 {
+        margin-top: 10px;
+    }
+    
+    .offset {
+        margin-bottom: 40px;
+    }
+    
+    a>span {
+        display: block;
+        margin-top: 8px;
+        margin-left: 50px;
+        color: antiquewhite;
+        font-size: 15px;
+    }
+    
+    a>span:hover {
+        color: burlywood;
+    }
+    
+    #dotted {
+        border-top-width: 2px;
+        border-top-color: darkgray;
+        border-top-style: dotted;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    
+    section>h3 {
+        margin-bottom: 20px;
+    }
+    
+    img {
+        width: auto;
+        height: auto;
+        max-width: 100%;
+        max-height: 100%;
+    }
+    
+    .fleft {
+        float: left;
+        width: 224px;
+        margin-right: 6%;
+        margin-bottom: 60px;
+    }
+    
+    .bgimg {
+        background-size: 85% 70%;
+        background-position: 22px 17px;
+        background-repeat: no-repeat;
+    }
+    
+    div>h5,
+    div>p {
+        margin-left: 10px;
+    }
+    
+    div>h5 {
+        font-style: oblique;
+        color: burlywood;
+        font-size: 14px;
+        margin: 5px 10px;
+    }
+    
+    div>p {
+        font-size: 12px;
+        line-height: 1.5em;
+    }
+    
+    .a1 {
+        background-image: url(../images/youyouyu.png);
+    }
+    
+    .a2 {
+        background-image: url(../images/Activity_Scheduling_System.jpg);
+    }
+    
+    .a3 {
+        background-image: url(../images/application_dev.png);
+    }
+    
+    .a4 {
+        background-image: url(../images/Media_Server_big.jpg);
+    }
+    
+    .a5 {
+        background-image: url(../images/security.jpg);
+    }
+    
+    .a6 {
+        background-image: url(../images/web_development_with_dnn.png);
+    }
+    
+    footer.wrapper {
+        position: relative;
+    }
+    
+    div.absolute {
+        position: absolute;
+        width: 100%;
+        height: 323px;
+        background: url(../images/page_footer.jpg);
+        background-position: -70px;
+        top: 20px;
+    }
+    
+    footer ul {
+        display: inline-block;
+        vertical-align: top;
+        margin-right: 10%;
+        font-size: 14px;
+        position: relative;
+    }
+    
+    footer>ul>li {
+        margin: 20px 0px;
+    }
+    
+    footer>ul.first-child >li:first-child {
+        font-size: 25px;
+    }
+    
+    footer>p {
+        margin-top: 70px;
+        margin-bottom: 10px;
+        color: antiquewhite;
+        font-size: 12px;
+    }
+    
+    .foot_bg {
+        background: url(../images/page_footer_repeat.jpg) top repeat-x;
+    }
+    
+    .foot_nav {
+        position: relativeurl(/images/page_footer.jpg);
+        float: right;
+        margin-bottom: 20px;
+    }
+    
+    div.foot_nav>a {
+        margin-left: 30px;
+        color: antiquewhite;
+        font-size: 12px;
+    }
+    
+    div.foot_nav>a:hover {
+        color: burlywood;
+    }

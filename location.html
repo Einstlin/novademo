@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf8' /> </head>
+
+<body>
+    <div id='wrapper' style='border:1px solid red'>
+        <p style="padding:10px;border:1px solid black;">1、父元素postion:static;display:block;无float;无固定高宽，则父元素高宽随子元素内容填充</p>
+        <div id='box1' style="width:100px;height:100px;border:1px solid blue;margin-left:300px;">
+            <p>2、这个p元素能撑开父元素吗？撑不开了，也不会影响其他周围元素和父元素的父元素</p>
+        </div>
+        <div id='box2' style="width:100px;height:100px;border:1px solid blue;float:left;"><span style="border:1px solid green;">3、子元素float:left;脱离正常文档流，不会撑开父元素（这个span元素的父元素高宽固定，撑不开了）</span></div>
+        <div id='box3' style="width:100px;height:100px;border:1px solid blue;float:left;">
+            <p style="border:1px solid green;">4、子元素float:left;脱离正常文档流，不会撑开父元素（这个p元素的父元素高宽固定，撑不开了）</p>
+        </div>
+        <div id='box4' style="width:100px;height:100px;border:1px solid blue;margin-left:200px;">
+            <p>5、这个p元素无float，是通过margin-left：200px;来定位过来的，不然它在框3下面</p>
+        </div>
+    </div>
+    <div id='box5' style="width:100px;height:100px;border:1px solid blue;margin-left:300px;">
+        <p>6、这个p元素无float，是通过margin-left：300px;来定位过来的，不然它在框3下面了，父元素是body</p>
+    </div>
+    <div style="border:1px solid red;float:left;">
+        <p>7、这是一个新的浮动元素，作为父元素，如果没有框6它就在框3下面了</p>
+        <div style='width:100px;height:100px;border:1px solid red;'>
+            <p>8、子元素不浮动，能撑开父元素!但是这个p元素的父元素固定高宽了能被撑开吗？撑不开！</p>
+        </div>
+        <div style='width:100px;height:100px;border:1px solid red;margin-left:550px;'>
+            <p style="float:left;">9、子元素浮动，能撑开父元素!但是这个p元素的父元素固定高宽了能被撑开吗？撑不开！</p>
+        </div>
+        <div style='width:100px;height:100px;border:1px solid red;float:left;margin-left:200px;'>
+            <p style="float:left;">10、子元素浮动，能撑开父元素!但是这个p元素的父元素固定高宽了能被撑开吗？撑不开！</p>
+        </div>
+        <div style='border:1px solid red;'>
+            <p>11、框10浮动，框11不浮动，无视框10的存在，但是却能影响框11的子元素p中的文字的排版，神奇，）））原来是因为同辈元素的子元素是同辈元素么？？？？？？文字环绕图片，环绕浮动？？？？？？？</p>
+        </div>
+    </div>
+</body>
+     
+</html>
